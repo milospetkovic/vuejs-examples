@@ -1,6 +1,6 @@
 <template>
     <div>
-        <app-header v-bind:title="title" v-on:changeTitle="updateTitle($event)"></app-header>
+        <app-header v-bind:title="title" v-on:changeTitleFromHeaderTransmitToRootComponent="updateTitle($event)"></app-header>
         <app-ninjas v-bind:ninjas="ninjas"></app-ninjas>
         <ul>
           <li v-for="ninja in ninjas">{{ ninja.name }}</li>
